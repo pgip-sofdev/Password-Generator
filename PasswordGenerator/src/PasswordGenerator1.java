@@ -14,7 +14,7 @@ public class PasswordGenerator1 {
 	private JFrame frame;
 
 	/**
-	 * Launch the application.
+	 * Launch the application. Pat Williams 7/30/2019
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
