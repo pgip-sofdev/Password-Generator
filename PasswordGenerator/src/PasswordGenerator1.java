@@ -52,6 +52,35 @@ public class PasswordGenerator1 {
 		JButton btnPush = new JButton("Click");
 		btnPush.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				int length = 12;
+				System.out.println(password(length));
+				
+			}
+				char[] password(int len)
+				{
+					System.out.println("Create password using random ()");
+					System.out.println("The new password is:  ");
+					
+				String Captial_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+				String Lower_chars = "abcdefghijklmnopqrstuvwxyz";
+				String Numbers = "0123456789";
+				String Symbols = "!@#$%^&*?<>+";
+				
+				String values = Captial_chars + Lower_chars + Numbers + Symbols ;
+				
+				Random rndm_method = new Random ();
+				
+				char[] password = new char [len];
+				
+				for (int i = 0; i < len; i ++)
+				{
+					
+					password[i] = values.charAt(rndm_method.nextInt(values.length()));
+				
+				}
+				
+				return password;
+				}		
 			
 			}
 		});
