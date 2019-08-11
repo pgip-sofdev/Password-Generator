@@ -61,12 +61,12 @@ public class PasswordGenerator1 {
 					System.out.println("Create password using random ()");
 					System.out.println("The new password is:  ");
 					
-				String Captial_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+				String Capital_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 				String Lower_chars = "abcdefghijklmnopqrstuvwxyz";
 				String Numbers = "0123456789";
 				String Symbols = "!@#$%^&*?<>+";
 				
-				String values = Captial_chars + Lower_chars + Numbers + Symbols ;
+				String values = Capital_chars + Lower_chars + Numbers + Symbols ;
 				
 				Random rndm_method = new Random ();
 				
