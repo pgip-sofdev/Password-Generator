@@ -88,8 +88,30 @@ public class PasswordGenerator1 {
 		frame.getContentPane().add(btnPush);
 		
 		JLabel lblClickForNew = new JLabel("Click for New Password");
-		lblClickForNew.setBounds(154, 95, 122, 43);
+		lblClickForNew.setForeground(Color.BLACK);
+		lblClickForNew.setBackground(Color.WHITE);
+		lblClickForNew.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblClickForNew.setBounds(154, 95, 136, 49);
 		frame.getContentPane().add(lblClickForNew);
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(256, 217, -76, 20);
+		frame.getContentPane().add(textPane);
+		
+		
+		
+		textField = new JTextField(12);
+		textField.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				String text = textField.getText();
+			}
+			
+						
+		});
+		textField.setBounds(165, 204, 100, 33);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
